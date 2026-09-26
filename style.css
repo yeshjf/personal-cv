@@ -1,0 +1,123 @@
+/* Mary Rose's CV uses the portfolio's warm paper, ink, coral, and lavender palette. */
+:root {
+  --paper: #fbfafc;
+  --ink: #171a2b;
+  --muted: #656879;
+  --coral: #f07868;
+  --lavender: #eeebff;
+  --line: #e8e7ed;
+  --white: #ffffff;
+  --font-body: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-heading: "Outfit", "Plus Jakarta Sans", sans-serif;
+  --font-code: "Fira Code", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--font-body); font-size: 15px; line-height: 1.75; }
+a { color: inherit; }
+.page-width { width: min(1080px, calc(100% - 48px)); margin-inline: auto; }
+.site-header { min-height: 72px; padding: 0 max(24px, calc((100vw - 1080px) / 2)); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: rgba(251, 250, 252, .96); }
+.brand { font: 600 14px var(--font-code); text-decoration: none; letter-spacing: -.04em; }
+.brand-dot { display: inline-block; width: 8px; height: 8px; margin-right: 9px; border-radius: 50%; background: var(--coral); }
+.site-nav { display: flex; align-items: center; gap: 25px; }
+.site-nav a, .site-footer a { color: var(--muted); font-size: 12px; text-decoration: none; transition: color .18s ease; }
+.site-nav a:hover, .site-footer a:hover { color: var(--coral); }
+.hero { min-height: 570px; padding-block: 76px 84px; display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 64px; }
+.eyebrow, .section-label, .project-topline { font-family: var(--font-code); }
+.eyebrow { display: inline-flex; gap: 10px; margin: 0 0 20px; padding: 6px 13px; border-radius: 99px; color: #5750bb; background: var(--lavender); font-size: 12px; }
+.eyebrow span { color: #625be0; }
+h1, h2, h3, p, figure { margin-top: 0; }
+h1, h2, h3 { font-family: var(--font-heading); }
+h1 { margin-bottom: 12px; font-size: clamp(48px, 7.5vw, 78px); font-weight: 800; letter-spacing: -.065em; line-height: .98; }
+.accent { color: #625be0; }
+.hero-title { margin-bottom: 17px; font-weight: 700; }
+.hero-title span { color: var(--coral); padding-inline: 3px; }
+.hero-intro { max-width: 590px; margin-bottom: 25px; color: var(--muted); font-size: 16px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.button { min-height: 46px; padding: 10px 19px; display: inline-flex; align-items: center; gap: 15px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; }
+.button:hover { transform: translateY(-2px); box-shadow: 0 8px 22px #171a2b12; }
+.button-dark { color: var(--white); background: var(--ink); border-color: var(--ink); }
+.button-light { background: var(--paper); }
+.profile-frame { position: relative; width: min(100%, 330px); justify-self: end; margin: 0; padding: 13px; border: 1px solid var(--line); border-radius: 22px; background: var(--white); box-shadow: 0 22px 60px #171a2b0d; transform: rotate(1deg); }
+.profile-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; background: var(--lavender); }
+.profile-frame figcaption { padding: 11px 4px 1px; color: var(--muted); font: 11px var(--font-code); text-align: center; }
+.section { padding-block: 62px; border-top: 1px solid var(--line); }
+.section-label { margin-bottom: 12px; color: #7773c7; font-size: 11px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+h2 { margin-bottom: 0; font-size: clamp(30px, 4vw, 42px); line-height: 1.1; letter-spacing: -.045em; }
+.section-heading > p { max-width: 445px; margin-bottom: 2px; color: var(--muted); font-size: 13px; }
+.about-card, .education-card, .skills-panel, .project-card { border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+.about-card { padding: 26px 30px; color: var(--muted); }
+.about-card p:last-child { margin-bottom: 0; }
+.education-card { padding: 23px 26px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.education-card h3, .skills-panel h3 { margin-bottom: 5px; font-size: 17px; }
+.education-card p { margin-bottom: 0; }
+.muted { color: var(--muted); font-size: 13px; }
+.education-badge { padding: 6px 12px; border-radius: 99px; color: #5952bc; background: var(--lavender); font: 11px var(--font-code); white-space: nowrap; }
+.skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.skills-panel { padding: 22px; }
+.skills-panel h3 { margin-bottom: 16px; }
+.tag-list { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.tag-list li { padding: 4px 9px; border-radius: 6px; color: #4b4e5c; background: #f2f1f7; font-size: 11px; line-height: 1.7; }
+.tag-list-muted li { background: #f6f4f1; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.project-card { min-width: 0; padding: 22px; transition: transform .18s ease, box-shadow .18s ease; }
+.project-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px #171a2b0c; }
+.project-featured { background: #f7f5ff; border-color: #e5e1ff; }
+.project-topline { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 13px; color: #7773c7; font-size: 10px; }
+.project-number { color: #a3a1b0; }
+.project-card h3 { margin-bottom: 9px; font-size: 22px; letter-spacing: -.025em; }
+.project-card > p { margin-bottom: 15px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.project-card .project-subtitle { color: var(--ink); font-size: 13px; font-weight: 700; }
+.project-link { display: inline-block; margin-top: 15px; color: #5750bb; font-size: 12px; font-weight: 700; text-decoration: none; }
+.project-link:hover, .contact-links a:hover { color: var(--coral); }
+.contact-section { margin-top: 40px; padding-block: 56px; background: #f1efff; }
+.contact-inner { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+.contact-inner h2 { max-width: 500px; margin-bottom: 8px; }
+.contact-note { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+.contact-links { min-width: 245px; display: grid; gap: 8px; }
+.contact-links a { display: flex; justify-content: space-between; gap: 16px; color: var(--ink); font-size: 12px; text-decoration: none; transition: color .18s ease; }
+.site-footer { min-height: 68px; display: flex; justify-content: space-between; align-items: center; color: #8a8b96; font-size: 11px; }
+
+/* Respect visitors who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+@media (max-width: 760px) {
+  .site-header { padding-inline: 24px; }
+  .site-nav { gap: 15px; }
+  .hero { min-height: auto; padding-block: 56px; grid-template-columns: 1fr .65fr; gap: 28px; }
+  .profile-frame { width: min(100%, 260px); }
+  .hero-title { font-size: 13px; }
+  .hero-intro { font-size: 14px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 14px; }
+  .page-width { width: min(100% - 36px, 460px); }
+  .site-header { min-height: 64px; padding: 12px 18px; flex-wrap: wrap; gap: 7px 16px; }
+  .site-nav { width: 100%; justify-content: space-between; gap: 6px; }
+  .site-nav a { font-size: 10px; }
+  .brand { font-size: 11px; }
+  .brand-dot { width: 7px; height: 7px; margin-right: 5px; }
+  .hero { padding-block: 42px 50px; grid-template-columns: 1fr; gap: 26px; }
+  .hero-copy { order: 1; }
+  .profile-frame { order: 0; width: min(190px, 60%); justify-self: start; }
+  h1 { font-size: clamp(48px, 15vw, 68px); }
+  .hero-title { max-width: 370px; }
+  .section { padding-block: 44px; }
+  .section-heading { display: block; }
+  .section-heading > p { margin-top: 10px; }
+  .about-card { padding: 20px; }
+  .education-card { padding: 18px; align-items: flex-start; }
+  .skills-layout, .project-grid { grid-template-columns: 1fr; }
+  .skills-panel, .project-card { padding: 19px; }
+  .contact-section { margin-top: 20px; padding-block: 42px; }
+  .contact-inner { align-items: flex-start; flex-direction: column; gap: 22px; }
+  .site-footer { width: min(100% - 36px, 460px); }
+}
+
+
+
+
+
