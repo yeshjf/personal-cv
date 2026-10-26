@@ -8,9 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span> mary rose alliones</a>
     <nav class="site-nav" aria-label="Main navigation">
@@ -26,14 +27,15 @@
         <h1 id="page-title">Mary Rose<br>Alliones<span class="accent">.</span></h1>
         <p class="hero-title">BSIT Student <span>·</span> Front-End Developer <span>·</span> UI/UX Designer</p>
         <p class="hero-intro">I’m a Bachelor of Science in Information Technology student currently in my 4th year. I enjoy building clean, usable, responsive products and turning coursework into meaningful digital experiences.</p>
+        <p class="hero-location">Based in Panabo City</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#projects">View Projects <span aria-hidden="true">↘</span></a>
           <a class="button button-light" href="#contact">Contact Me</a>
         </div>
       </div>
       <figure class="profile-frame">
-        <img src="images/profile-photo.png" alt="Mary Rose Alliones" width="651" height="651">
-        <figcaption>Information Technology · BSIT 3G</figcaption>
+        <img src="images/profile-photo.png" alt="Mary Rose Alliones" width="651" height="651" decoding="async">
+        <figcaption>Information Technology · BSIT 4G</figcaption>
       </figure>
     </section>
 
@@ -43,6 +45,7 @@
       <div class="about-card">
         <p>Hi! I’m Mary Rose Alliones, a BSIT student with a passion for front-end development and UI/UX design. I enjoy creating clean, user-friendly, responsive web applications while learning technologies that help turn ideas into useful digital experiences.</p>
         <p>Over the past three years, I’ve moved from desktop CRUD systems in Java to web and mobile products. My recent work focuses on interface design and front-end implementation, including a capstone that combines computer vision with real-time web monitoring.</p>
+        <div class="career-objective"><span>Career objective</span><p>To contribute to thoughtful front-end and UI/UX work, keep learning from real projects, and build digital experiences that are useful and easy to use.</p></div>
       </div>
     </section>
 
@@ -50,8 +53,8 @@
       <p class="section-label">// 02 — EDUCATION</p>
       <div class="section-heading"><h2 id="education-title">Education</h2></div>
       <article class="education-card">
-        <div><h3>Bachelor of Science in Information Technology</h3><p class="muted">Current year level: 4th year</p></div>
-        <span class="education-badge">BSIT 3G</span>
+        <div><h3>Bachelor of Science in Information Technology</h3><p class="education-school">Davao del Norte State College · Panabo City</p><p class="muted">Current year level: 4th year</p></div>
+        <span class="education-badge">BSIT 4G</span>
       </article>
     </section>
 
@@ -73,7 +76,7 @@
       <div class="section-heading"><h2 id="projects-title">Selected work</h2><p>Web, mobile, and capstone projects from coursework and startup work.</p></div>
       <div class="project-grid">
         <article class="project-card project-featured">
-          <div class="project-media"><img src="images/TURO.png" alt="TURO application interface preview" loading="lazy"></div>
+          <div class="project-media"><img src="images/TURO.png" alt="TURO application interface preview" width="1520" height="773" loading="lazy" decoding="async"></div>
           <div class="project-content">
             <div class="project-topline"><span>Web application · Live</span><span class="project-number">01</span></div>
             <h3>TURO</h3>
@@ -83,17 +86,16 @@
           </div>
         </article>
         <article class="project-card">
-          <div class="project-media project-media-phone"><img src="images/lakbay.png" alt="Lakbay mobile application preview" loading="lazy"></div>
+          <div class="project-media project-media-phone"><img src="images/lakbay.png" alt="Lakbay mobile application preview" width="920" height="663" loading="lazy" decoding="async"></div>
           <div class="project-content">
             <div class="project-topline"><span>Mobile application</span><span class="project-number">02</span></div>
             <h3>Lakbay</h3>
             <p>A mobile app concept for finding work and connecting employers with workers. The project explores job discovery and a straightforward hiring experience.</p>
             <ul class="tag-list"><li>Java</li><li>Mobile UI</li><li>UI/UX</li></ul>
-            <a class="project-link" href="https://github.com/bryyyyz" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-media"><img src="images/AiVigilation.png" alt="AI-Vigilation project preview" loading="lazy"></div>
+          <div class="project-media"><img src="images/AiVigilation.png" alt="AI-Vigilation project preview" width="1532" height="772" loading="lazy" decoding="async"></div>
           <div class="project-content">
             <div class="project-topline"><span>Capstone · In progress</span><span class="project-number">03</span></div>
             <h3>AI-Vigilation</h3>
@@ -107,19 +109,19 @@
 
     <section class="section page-width" id="achievements" aria-labelledby="achievements-title">
       <p class="section-label">// 05 — ACHIEVEMENTS &amp; CERTIFICATES</p>
-      <div class="section-heading"><h2 id="achievements-title">Moments worth keeping</h2><p>Recognition for a startup project and courses completed through Cisco Networking Academy.</p></div>
+      <div class="section-heading"><h2 id="achievements-title">Moments worth keeping</h2><p>Team recognition from Level App 3.0 and courses completed through Cisco Networking Academy.</p></div>
       <div class="achievement-grid">
         <article class="achievement-card achievement-featured">
-          <div class="achievement-media"><img src="images/overallchamp.jpg" alt="TURO startup competition award" loading="lazy"></div>
-          <div class="achievement-content"><span class="achievement-type">Startup competition</span><h3>Overall Champion · DNSC Startup Competition</h3><p>Recognition for the TURO application startup project.</p></div>
+          <a class="achievement-media" href="images/overallchamp.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the full Level App 3.0 award"><img src="images/overallchamp.jpg" alt="Overall Champion certificate awarded to NexuTech Solutions" width="1536" height="2048" loading="lazy" decoding="async"><span class="media-action" aria-hidden="true">View award ↗</span></a>
+          <div class="achievement-content"><span class="achievement-type">Level App 3.0 · May 2026</span><h3>Overall Champion · NexuTech Solutions</h3><p>Team recognition for the Level App 3.0 showcase at Davao del Norte State College.</p></div>
         </article>
         <article class="achievement-card">
-          <div class="achievement-media achievement-certificate"><img src="images/mrcert1.png" alt="Mary Rose Alliones's CCNA Introduction to Networks certificate" loading="lazy"></div>
-          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Introduction to Networks</h3><p>12 June 2025</p></div>
+          <a class="achievement-media achievement-certificate" href="images/mrcert1.png" target="_blank" rel="noopener noreferrer" aria-label="View the full CCNA Introduction to Networks certificate"><img src="images/mrcert1.png" alt="Mary Rose Alliones's CCNA Introduction to Networks certificate" width="992" height="670" loading="lazy" decoding="async"><span class="media-action" aria-hidden="true">View certificate ↗</span></a>
+          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Introduction to Networks</h3><p><time datetime="2025-06-12">12 June 2025</time></p></div>
         </article>
         <article class="achievement-card">
-          <div class="achievement-media achievement-certificate"><img src="images/mrcert2.png" alt="Mary Rose Alliones's CCNA Switching, Routing, and Wireless Essentials certificate" loading="lazy"></div>
-          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Switching, Routing, and Wireless Essentials</h3><p>30 December 2025</p></div>
+          <a class="achievement-media achievement-certificate" href="images/mrcert2.png" target="_blank" rel="noopener noreferrer" aria-label="View the full CCNA Switching, Routing, and Wireless Essentials certificate"><img src="images/mrcert2.png" alt="Mary Rose Alliones's CCNA Switching, Routing, and Wireless Essentials certificate" width="991" height="671" loading="lazy" decoding="async"><span class="media-action" aria-hidden="true">View certificate ↗</span></a>
+          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Switching, Routing, and Wireless Essentials</h3><p><time datetime="2025-12-30">30 December 2025</time></p></div>
         </article>
       </div>
     </section>

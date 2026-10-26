@@ -1,19 +1,41 @@
-# Personal CV Web Page
+# Mary Rose Alliones — Personal CV
 
-Name: Mary Rose Alliones  
-Year Level: 4th Year  
-Program/Set: BSIT 4G  
-Course Subject: IT 415 – APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES
+A responsive personal CV website presenting my profile, education, skills, selected projects, achievements, certifications, and contact links.
 
-## About this project
+- **Student:** Mary Rose Alliones
+- **Program:** 4th Year, Bachelor of Science in Information Technology (BSIT 4G)
+- **School:** Davao del Norte State College, Panabo City
+- **Course:** IT 415 – Application Development and Emerging Technologies
+- **Live website:** [personal-cv-sepia.vercel.app](https://personal-cv-sepia.vercel.app/)
 
-A simple, responsive personal CV webpage built with semantic HTML and plain CSS. It summarizes my education, portfolio-verified skills and tools, selected projects, and contact links. 
+## Technologies used
 
-## How to open
+- Semantic HTML5
+- CSS3, including Grid, Flexbox, responsive layouts, and reduced-motion support
+- Google Fonts with local font fallbacks
+- Git and GitHub for version control
+- Vercel for hosting
 
-1. Open the `cv` folder in Visual Studio Code.
-2. Open `index.html` in a browser, or use the Live Server extension if it is already installed.
-3. `style.css` is linked from `index.html`; keep both files and the `images` folder together.
+The site does not need a build step or JavaScript framework.
 
-The page uses Google Fonts when an internet connection is available and falls back to system fonts when it is not.
+## Project structure
 
+~~~text
+.
+├── index.html       # CV content and navigation
+├── styles.css       # Design system and responsive styles
+├── images/          # Profile, project, and certificate images
+└── README.md        # Project documentation
+~~~
+
+## Run locally
+
+Open index.html in a browser. Keep it beside styles.css and the images folder so the styles and pictures load. A local server such as VS Code Live Server also works.
+
+## Accessibility and usability
+
+The page includes a skip link, semantic sections and headings, keyboard-visible focus styles, descriptive image text, responsive navigation, and reduced-motion support. Award and certificate previews open their full-size images.
+
+## Deployment
+
+The public site is available at [https://personal-cv-sepia.vercel.app/](https://personal-cv-sepia.vercel.app/). This repository contains the static source to deploy from its root directory; Vercel needs no framework preset or build command.
