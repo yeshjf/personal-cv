@@ -7,14 +7,14 @@
   <title>Mary Rose Alliones | Personal CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span> mary rose alliones</a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -70,40 +70,63 @@
 
     <section class="section page-width" id="projects" aria-labelledby="projects-title">
       <p class="section-label">// 04 — SELECTED PROJECTS</p>
-      <div class="section-heading"><h2 id="projects-title">Selected work</h2><p>A few school and capstone projects spanning web, mobile, and desktop development.</p></div>
+      <div class="section-heading"><h2 id="projects-title">Selected work</h2><p>Web, mobile, and capstone projects from coursework and startup work.</p></div>
       <div class="project-grid">
         <article class="project-card project-featured">
-          <div class="project-topline"><span>Capstone · Ongoing</span><span class="project-number">01</span></div>
-          <h3>AI-VIGILATION</h3>
-          <p class="project-subtitle">A Web-Based Online Examination System with AI Invigilation Using Computer Vision</p>
-          <p>An ongoing capstone integrating AI and computer vision into online exams. Instructors create and manage exams while real-time AI invigilation flags suspicious behavior. I contribute to front-end development, UI/UX design, system integration, and database management.</p>
-          <ul class="tag-list"><li>React</li><li>JavaScript</li><li>Computer Vision / AI</li><li>MySQL</li></ul>
+          <div class="project-media"><img src="images/TURO.png" alt="TURO application interface preview" loading="lazy"></div>
+          <div class="project-content">
+            <div class="project-topline"><span>Web application · Live</span><span class="project-number">01</span></div>
+            <h3>TURO</h3>
+            <p>A localized services platform designed to connect tutors, job seekers, and clients. Developed as a startup project and shown at the DNSC startup competition.</p>
+            <ul class="tag-list"><li>React</li><li>JavaScript</li><li>Vercel</li></ul>
+            <a class="project-link" href="https://turo-app-rust.vercel.app/" target="_blank" rel="noopener noreferrer">View live project <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
         <article class="project-card">
-          <div class="project-topline"><span>Web App · School project</span><span class="project-number">02</span></div>
-          <h3>Room Rental System</h3>
-          <p>A boarding house rental platform where users search rooms, view details, and submit applications online. Admins manage listings, tenants, and payments. I built the front end, interface design, and database integration.</p>
-          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li></ul>
+          <div class="project-media project-media-phone"><img src="images/lakbay.png" alt="Lakbay mobile application preview" loading="lazy"></div>
+          <div class="project-content">
+            <div class="project-topline"><span>Mobile application</span><span class="project-number">02</span></div>
+            <h3>Lakbay</h3>
+            <p>A mobile app concept for finding work and connecting employers with workers. The project explores job discovery and a straightforward hiring experience.</p>
+            <ul class="tag-list"><li>Java</li><li>Mobile UI</li><li>UI/UX</li></ul>
+            <a class="project-link" href="https://github.com/bryyyyz" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
         <article class="project-card">
-          <div class="project-topline"><span>Web Platform · Technopreneurship</span><span class="project-number">03</span></div>
-          <h3>TURO</h3>
-          <p>A platform connecting students with local tutors through search, session booking, and profile management. I focused on UI/UX design, front-end development, and core features.</p>
-          <ul class="tag-list"><li>Figma</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
-          <a class="project-link" href="https://turo-app-rust.vercel.app/" target="_blank" rel="noopener noreferrer">Visit live app <span aria-hidden="true">↗</span></a>
+          <div class="project-media"><img src="images/AiVigilation.png" alt="AI-Vigilation project preview" loading="lazy"></div>
+          <div class="project-content">
+            <div class="project-topline"><span>Capstone · In progress</span><span class="project-number">03</span></div>
+            <h3>AI-Vigilation</h3>
+            <p>An online exam proctoring concept that explores how AI could assist with monitoring remote exam sessions.</p>
+            <ul class="tag-list"><li>Web application</li><li>Computer vision</li></ul>
+            <a class="project-link" href="https://ai-vigilation.vercel.app/" target="_blank" rel="noopener noreferrer">Open live preview <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
-        <article class="project-card">
-          <div class="project-topline"><span>Mobile App · School project</span><span class="project-number">04</span></div>
-          <h3>Lakbay</h3>
-          <p>A mobile application built with Android Studio. I worked on interface design, front-end development, and database integration.</p>
-          <ul class="tag-list"><li>Android Studio</li><li>Java</li></ul>
+      </div>
+    </section>
+
+    <section class="section page-width" id="achievements" aria-labelledby="achievements-title">
+      <p class="section-label">// 05 — ACHIEVEMENTS &amp; CERTIFICATES</p>
+      <div class="section-heading"><h2 id="achievements-title">Moments worth keeping</h2><p>Recognition for a startup project and courses completed through Cisco Networking Academy.</p></div>
+      <div class="achievement-grid">
+        <article class="achievement-card achievement-featured">
+          <div class="achievement-media"><img src="images/overallchamp.jpg" alt="TURO startup competition award" loading="lazy"></div>
+          <div class="achievement-content"><span class="achievement-type">Startup competition</span><h3>Overall Champion · DNSC Startup Competition</h3><p>Recognition for the TURO application startup project.</p></div>
+        </article>
+        <article class="achievement-card">
+          <div class="achievement-media achievement-certificate"><img src="images/mrcert1.png" alt="Mary Rose Alliones's CCNA Introduction to Networks certificate" loading="lazy"></div>
+          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Introduction to Networks</h3><p>12 June 2025</p></div>
+        </article>
+        <article class="achievement-card">
+          <div class="achievement-media achievement-certificate"><img src="images/mrcert2.png" alt="Mary Rose Alliones's CCNA Switching, Routing, and Wireless Essentials certificate" loading="lazy"></div>
+          <div class="achievement-content"><span class="achievement-type">Cisco Networking Academy</span><h3>CCNA: Switching, Routing, and Wireless Essentials</h3><p>30 December 2025</p></div>
         </article>
       </div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="page-width contact-inner">
-        <div><p class="section-label">// 05 — CONTACT</p><h2 id="contact-title">Let’s build something useful.</h2><p class="contact-note">Open to internships, junior front-end roles, and collaborations.</p></div>
+        <div><p class="section-label">// 06 — CONTACT</p><h2 id="contact-title">Let’s build something useful.</h2><p class="contact-note">Open to internships, junior front-end roles, and collaborations.</p></div>
         <div class="contact-links"><a href="mailto:allionesmaryrose@gmail.com">allionesmaryrose@gmail.com <span aria-hidden="true">↗</span></a><a href="tel:09934205968">09934205968 <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/dxdkkr" target="_blank" rel="noopener noreferrer">Facebook: Mary Rose Alliones <span aria-hidden="true">↗</span></a><a href="https://github.com/yeshjf" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://yenzns.github.io/Portfolioo/" target="_blank" rel="noopener noreferrer">Portfolio <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
@@ -111,7 +134,3 @@
   <footer class="site-footer page-width"><span>© 2026 Mary Rose Alliones</span><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
-
-
-
-
