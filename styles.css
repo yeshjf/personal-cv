@@ -76,7 +76,7 @@ h1, h2 { font-family: var(--display-font); }
   content: "✦"; position: absolute; z-index: -1; left: 50%; top: 12%;
   color: #dbadc6; font: 45px var(--display-font);
 }
-.hero-copy { position: relative; z-index: 2; animation: rise-in .65s both; }
+.hero-copy { position: relative; z-index: 2; }
 .eyebrow, .section-label, .project-topline, .career-objective span { font-family: var(--label-font); }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px; margin-bottom: 25px;
@@ -112,7 +112,7 @@ h1 {
   position: relative; justify-self: end; width: min(100%, 400px); margin: 0;
   padding: 13px; border: 1px solid #e8d4e1; border-radius: 175px 175px 25px 25px;
   background: #fff; box-shadow: 28px 26px 0 #ead9ec, 0 30px 70px #5c335524;
-  transform: rotate(2deg); animation: portrait-in .7s .12s both;
+  transform: rotate(2deg);
 }
 .profile-frame::before {
   content: "✦"; position: absolute; z-index: 2; right: -35px; top: 33px;
@@ -308,14 +308,16 @@ h2 { margin-bottom: 0; font-size: clamp(45px, 5.3vw, 68px); font-weight: 600; li
   min-height: 78px; color: #8a7d89; font-size: 11px;
 }
 
-@keyframes rise-in {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Scroll entrances leave the normal layout in place and run only once. */
+html.motion-ready .reveal {
+  opacity: 0;
+  translate: 0 24px;
+  transition: opacity .65s ease, translate .65s cubic-bezier(.22, 1, .36, 1),
+              transform .25s ease, box-shadow .25s ease;
+  transition-delay: var(--reveal-delay, 0ms);
 }
-@keyframes portrait-in {
-  from { opacity: 0; transform: translateY(16px) rotate(2deg); }
-  to { opacity: 1; transform: translateY(0) rotate(2deg); }
-}
+html.motion-ready .profile-frame.reveal { translate: 18px 20px; }
+html.motion-ready .reveal.is-visible { opacity: 1; translate: 0 0; }
 
 /* Tablet */
 @media (max-width: 900px) {
@@ -368,6 +370,7 @@ h2 { margin-bottom: 0; font-size: clamp(45px, 5.3vw, 68px); font-weight: 600; li
   .contact-links a { overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
+  html.motion-ready .reveal { opacity: 1; translate: 0 0; }
   *, *::before, *::after {
     scroll-behavior: auto !important; animation-duration: .01ms !important;
     transition-duration: .01ms !important;
